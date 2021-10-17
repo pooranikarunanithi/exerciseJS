@@ -1,7 +1,7 @@
 <!--
  * becode/javascript
  *
- * /03-colors/01-change-bcg-one/index.html - 3.1: couleur de fond (1)
+ * /03-colors/02-change-bcg-two/index.html - 3.2: couleur de fond (2)
  *
  * coded by leny@BeCode
  * started at 26/10/2018
@@ -10,7 +10,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8" />
-        <title>BeCode/JavaScript - 3.1: couleur de fond (1)</title>
+        <title>BeCode/JavaScript - 3.2: couleur de fond (2)</title>
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link rel="stylesheet" href="../../_shared/css/normalize.css" />
@@ -21,21 +21,24 @@
             <header>
                 <h1>BeCode / JavaScript</h1>
                 <h2>
-                    <span>3.1</span>
-                    <strong>couleur de fond (1)</strong>
+                    <span>3.2</span>
+                    <strong>couleur de fond (2)</strong>
                 </h2>
             </header>
             <div class="content">
                 <section class="explain">
-                    <p>Chaque bouton, une fois cliqué, doit changer la couleur de fond de la page par celle indiquée.</p>
+                    <p>Au clic sur le bouton, récupère la valeur de l'input et utilise-la comme couleur de fond de la page.</p>
                 </section>
                 <section class="material">
-                    <div class="actions">
-                        <button type="button" id="red" >Rouge</button>
-                        <button type="button" id="green">Vert</button>
-                        <button type="button" id="yellow">Jaune</button>
-                        <button type="button" id="blue">Bleu</button>
-                    </div>
+                    <form action="#" method="post">
+                        <div class="field">
+                            <label for="color">Couleur:</label>
+                            <input type="text" name="color" id="color" />
+                        </div>
+                        <div class="actions">
+                            <button type="button" id="run">Lancer le script</button>
+                        </div>
+                    </form>
                 </section>
             </div>
         </div>
