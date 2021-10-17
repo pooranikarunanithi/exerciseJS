@@ -88,5 +88,7 @@
         },
     ];
 
-    // your code here
+    console.log(people.filter(c => c.age > 18));
+
+
 })();

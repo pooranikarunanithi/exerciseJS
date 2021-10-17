@@ -25,5 +25,8 @@
         "cerise",
     ];
 
-    // your code here
+    //console.log(fruits.find(c => c =="durian"));
+    //console.log(fruits.find(c => c =="rsin"));
+    console.log(fruits.includes('pomme'));
+    console.log(fruits.includes('apple'));
 })();
