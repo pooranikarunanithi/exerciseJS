@@ -37,6 +37,20 @@
         "tangent",
         "arboré",
     ]);
+    
+    
+    var randomBirds = Math.floor(Math.random() * birds.length);
+    var birdName = birds[randomBirds].name;
 
-    // your code here
+    var randomAdjectives = Math.floor(Math.random() * adjectives.size);
+    var adjectiveUsed = [...adjectives][randomAdjectives]; 
+    
+   
+
+
+    document.getElementById("target").innerHTML = birdName + " " + adjectiveUsed
+    
+    
+    console.log(birdName, adjectiveUsed);
+});
 })();
