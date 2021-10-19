@@ -21,6 +21,12 @@
         "Simon",
         "Lucas",
     ]);
-
-    // your code here
+    document.getElementById('run').addEventListener("click", () => {
+    
+        console.log(people)
+      
+      console.log("Alexandre", people.has("Alexandre"));
+     
+    
+    })// your code here
 })();

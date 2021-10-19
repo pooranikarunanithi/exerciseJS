@@ -26,6 +26,16 @@
         "raisin",
         "cerise",
     ];
+    document.getElementById("run").addEventListener("click",()=>{
+       console.log(fruits)
+       var uniqueArray = fruits.filter(function(item, pos) {
+            return fruits.indexOf(item) == pos;
+       
+        })
 
-    // your code here
+       
+        console.log(uniqueArray)
+    })
+
+
 })();

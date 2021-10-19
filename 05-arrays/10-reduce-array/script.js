@@ -87,6 +87,11 @@
             age: 81,
         },
     ];
+    
+   
+    var age = people.reduce(function(prev, cur) {
+        return prev + cur.age;}, 0);
+      
+      console.log('Total :', age); 
 
-    // your code here
 })();
