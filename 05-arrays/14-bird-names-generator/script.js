@@ -38,7 +38,7 @@
         "arboré",
     ]);
     
-    
+    document.getElementById("run").addEventListener("click", () => {
     var randomBirds = Math.floor(Math.random() * birds.length);
     var birdName = birds[randomBirds].name;
 
