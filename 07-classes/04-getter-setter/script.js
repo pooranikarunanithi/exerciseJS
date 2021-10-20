@@ -10,5 +10,32 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    class Person {
+        constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+        // getters => access properties
+        // setters => change or mutate them
+        get fullName() {
+            return `Hello ${this.firstname} ${this.lastname}`;
+        }
+        set fullName(space) {
+            const parts = space.split(' ');
+            this.firstname = parts[0];
+            this.lastname = parts[1];
+        }
+    }
+    let run = document.getElementById("run");
+    run.addEventListener('click', () => {
+        let poorani= new Person('poorani', 'ragu');
+        console.log(poorani.fullName);
+        poorani.fullName = 'poorani karunanithi';
+        console.log(poorani.firstname + ' ' + poorani.lastname);
+      	//console.log(`${poorni.firstname} ${ragu.lastname}`); same output
+      // => has to be john.firstname otherwise undefined 
+    }) 
+
+
 })();
