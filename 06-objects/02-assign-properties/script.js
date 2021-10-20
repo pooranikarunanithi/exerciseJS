@@ -24,7 +24,23 @@
     const defaultProps = {
         available: true,
         os: "linux",
-        user: null,
+        os: "linux",
     };
-    // your code here
+    
+    document.getElementById('run').addEventListener("click", () => {
+        
+        //Object.assign(target, ...sources)
+     //  console.log('computers',computers);
+       // console.log( 'defaultProps',defaultProps);
+
+       obj['computers'] = 'available: true'
+      ' os: linux';
+       'os: "linux';
+       console.log('After adding a property using square bracket syntax');
+       console.log(obj);
+
+         //   console.log(computers)
+    })
+        
+        // your code here
 })();
