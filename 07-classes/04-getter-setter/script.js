@@ -33,9 +33,7 @@
         console.log(poorani.fullName);
         poorani.fullName = 'poorani karunanithi';
         console.log(poorani.firstname + ' ' + poorani.lastname);
-      	//console.log(`${poorni.firstname} ${ragu.lastname}`); same output
-      // => has to be john.firstname otherwise undefined 
-    }) 
+    })
 
 
 })();
